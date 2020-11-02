@@ -1,0 +1,38 @@
+.scroller{
+    overflow-y: scroll;
+    height: 100%;
+    *{
+        overflow-anchor: none;
+    }
+    &::after{
+        content: '';
+        display: block;
+        overflow-anchor: auto;
+        height: 1px;
+    }
+
+}
+
+*{
+    box-sizing: border-box;
+}
+html,body{
+    background: #7FDBFF;
+    height: 100%;
+}
+
+.message{
+    padding:0.5em;
+    border-radius: 1em;
+    margin: 1em;
+    line-height: 1.1em;
+    background-color: white;
+    animation: fadeIn 300ms ease-in;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        background-color: orange;
+    }
+}

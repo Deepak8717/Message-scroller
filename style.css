@@ -1,0 +1,50 @@
+.scroller {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.scroller * {
+  overflow-anchor: none;
+}
+
+.scroller::after {
+  content: '';
+  display: block;
+  overflow-anchor: auto;
+  height: 1px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  background: #7FDBFF;
+  height: 100%;
+}
+
+.message {
+  padding: 0.5em;
+  border-radius: 1em;
+  margin: 1em;
+  line-height: 1.1em;
+  background-color: white;
+  -webkit-animation: fadeIn 300ms ease-in;
+          animation: fadeIn 300ms ease-in;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    background-color: orange;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    background-color: orange;
+  }
+}
+/*# sourceMappingURL=style.css.map */
